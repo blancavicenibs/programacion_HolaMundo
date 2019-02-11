@@ -18,7 +18,7 @@
         android:layout_marginBottom="172dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Cuadrodetexto1"
+        android:text="Escribe aquí"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,8 +45,8 @@
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
         android:layout_marginStart="225dp"
         android:layout_marginLeft="225dp"
         android:layout_marginTop="79dp"
@@ -56,6 +56,7 @@
         android:text="Botón"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
