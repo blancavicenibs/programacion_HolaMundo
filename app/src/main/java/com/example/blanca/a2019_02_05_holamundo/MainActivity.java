@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+                Log.d( "enelboton",  "esto se escribe cuando pulso el boton" );
                 String resultado = editText.getText().toString();
 
                 textView.setText(String.valueOf(resultado.length()));
