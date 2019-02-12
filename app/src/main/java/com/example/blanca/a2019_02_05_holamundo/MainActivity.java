@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
 
                 String resultado = editText.getText().toString();
+
+
+                Log.d("copiando", "copio la entrada=" + resultado);
+
+
                 textView.setText(String.valueOf(resultado.length()));
 
             }
