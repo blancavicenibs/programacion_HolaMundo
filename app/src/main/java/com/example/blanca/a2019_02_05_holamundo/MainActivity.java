@@ -15,11 +15,23 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
 
 
+    public void alguienhatocadoelboton (View ptr){
+        Log.d("org.blanca","Principio de alguienhatocadoelboton");
+
+        String resultado = editText.getText().toString();
+
+        Log.d( "boton1",  "esto se escribe cuando pulso el boton1" );
+
+
+        textView.setText(String.valueOf(resultado.length()));
+
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
 
@@ -32,29 +44,13 @@ public class MainActivity extends AppCompatActivity {
         Log.d( "prueba",  "estoy en onCreate()" ); //debug
 
 
+
+
+
         //
         //Para que el programa haga algo cuando pulso el boton
         //
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Log.d( "enelboton",  "esto se escribe cuando pulso el boton" );
-
-                //Creo nueva variable que guardara el texto de entrada
-
-                String resultado = editText.getText().toString();
-
-                //Copio la entrada en el logcat
-
-                Log.d("copiando", "copio la entrada=" + resultado);
-
-                //Calculo la longitud con length, y pongo su resultado en el otro campo de textog
-
-                textView.setText(String.valueOf(resultado.length()));
-
-            }
-        });
 
 
 
