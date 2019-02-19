@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String respuesta = editText.getText().toString();
 
-                textView.setText(respuesta);
+                textView.setText(String.valueOf(respuesta.length()));
             }
         });
 
